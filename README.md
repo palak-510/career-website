@@ -1,7 +1,8 @@
 # Career Website UI Test Automation 
 
 ## 1. Installation
-Clone the project using repository link.
+Clone the project using repository link
+https://github.com/palak-510/career-website.git
 
 Branch names:
 
