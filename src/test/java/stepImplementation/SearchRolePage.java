@@ -55,6 +55,7 @@ public class SearchRolePage extends BaseTestUtils {
     }
 
     public void closeCookiePopup() {
+        waitUntilPresenceOf(shadowRoot);
         WebElement shadowRootElement = driver.findElement(shadowRoot);
         SearchContext shadowRoot = shadowRootElement.getShadowRoot();
         if (shadowRoot.findElements(cookie_denyAndContinue).size() != 0) {
@@ -309,6 +310,7 @@ public class SearchRolePage extends BaseTestUtils {
     }
 
     public void clickOnSearchButtonInSearchBySection() {
+        waitUntilPresenceOf(searchButtoninSearchBySection);
         driver.findElement(searchButtoninSearchBySection).click();
         waitInSeconds(5);
     }
